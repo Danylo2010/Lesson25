@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "philosopher", sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #a5e2fe;
+    padding: 24px 40px;
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    /* fixed */
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+/* Brave */
+.brave {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #78d6fa, #0e8e59 70%);
+
+}
+
+.brave__rule {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    font-size: 26px;
+    box-shadow: 3px 3px 7px #000;
+    color: #fff;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, #BFFFFF,#0A6060 100%);
+
+}
+.brave__rule p {
+    padding: 20px;
+    padding-top: 100px;
+}
+.brave__rule::before {
+    content: url('./images/1.png');
+    display: block;
+    padding: 10px;
+    float: left;
+}
+.brave__rule::after {
+    content: 'Хоробра серцем';
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 3px 3px 4px #000;
+    text-align: center;
+}
+/* Wall-e  */
+.wall-e {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, #bfe1ff,#7539ba 100%);
+
+}
+.wall-e__rule {
+    width: 350px;
+    height: 350px;
+    background: #BC59ff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wall-e__rule p{
+    padding: 20px;
+    font-size: 22px;
+    color:#fff;
+}
+.wall-e__rule::before {
+    content: '';
+    display: block;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border-left: 8px solid #3e69c1;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    transform:rotate(-45deg)
+}
+.wall-e__rule::after {
+    content: '';
+    display: block;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border-left: 8px solid #00a8a8;
+    position: absolute;
+    left: -30px;
+    top: -60px;
+    transform:rotate(-90deg)
+}
+
+/* Inside_Out */
+.Inside_Out {
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, #ffb76b,#ff7f04 100%);
+
+}
+.Inside_Out_rule {
+    width: 350px;
+    height: 350px;
+    background: #54e1ec;
+    position:relative;
+}
+.Inside_Out_rule::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position:absolute ;
+    display: block;
+    z-index:0;
+    top: 75px;
+    left:0px;
+    box-shadow: -50px -50px 0px 20px yellow, -100px 50px 0px 20px green,
+    -130px -20px 0px 20px blue
+}
+.Inside_Out_rule::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position:absolute ;
+    display: block;
+    z-index:0;
+    top: 75px ;
+    right:0px;
+    box-shadow: 50px 50px 0px 20px red, 70px  150px 0px 20px #8926b7;
+}
+.Inside_Out_rule_inside{
+    width: 350px;
+    height: 350px;
+    background: #54e1ec;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Inside_Out_rule_inside p{
+    padding: 20px;
+    font-size: 20pt;
+    color: white;
+}
+.Inside_Out_rule_inside img{
+    padding: 20px;
+}
